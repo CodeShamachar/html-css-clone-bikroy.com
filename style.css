@@ -1,0 +1,628 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*  ✔✔✔ header section  ✔✔✔ */
+header{
+    width: 100%;
+    height: 250px;
+    margin: auto;
+    color: #fff;
+    background-color:#149777 ;
+}
+.headTop{
+    height: 60px;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.topLeft, .topRight{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.menuBar, .menuBar i{
+    font-size: 1.4em;
+    display: none;
+}
+.top1Logo img{
+    width: 120px;
+    padding-top: 5px ;
+    cursor: pointer;
+}
+.top2{
+    width: 60px;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+}
+.top3{
+    border: 1px solid #33706c;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.top6{
+    background-color: #FFC800;
+    height:44px;
+    width: 130px;
+    line-height: 44px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #673500;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.topRight i{
+    font-size: 1.4rem;
+}
+.top4, .top5{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+.top4 span, .top5 span{
+    font-size: .8em;
+}
+.topRight{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* -----headBottom----- */
+.headBottom{
+    max-width: 1000px;
+    margin: auto;
+}
+.locSection{
+    height: 190px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.location{
+    height: 30px;
+    width: 160px;
+    background-color:#10846F ;
+    border-radius: 50px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+}
+.searchbox{
+    position: relative;
+    height:60px ;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+.searchbox input{
+    height: 100%;
+    width: 90%;
+    font-size: 1rem;
+    margin-left: 20px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+}
+.searchbox i{
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    right: 4px;
+    top: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFC800;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: #673500;
+    cursor: pointer; 
+}
+::placeholder{
+    color: #a4a4a4;
+    font-size: 1.1rem;
+}
+@media screen and (max-width: 960px) {
+    .menuBar, .menuBar i{
+        display: block;
+    }
+
+    .top2, .top3, .top6{
+        display: none;
+    }
+    .top4 span, .top5 span{
+        display: none;
+    }
+    .headTop{
+        padding: 0 10px;
+        
+    }
+    .topLeft, .topRight{
+        gap: 15px;
+    }
+    .topLeft{
+        gap: 10px;
+    }
+    .searchbox{
+        width: 90%;
+
+    }
+    header{
+        height: 190px;
+    }
+
+    .locSection{
+        height: 130px;
+    }
+    .searchbox{
+        height: 44px;
+    }
+    .searchbox i{
+        height: 38px;
+        width: 38px;
+        font-size: 1rem;
+        top: 3px;
+        right: 3px;
+    }
+    
+    ::placeholder{
+        font-size: 1rem;
+    }
+
+}
+
+
+
+/* ----- ✔✔✔ adsSection ✔✔✔----- */
+.adSection{
+    max-width: 1000px;
+    margin: auto;
+}
+.ads img{
+    width: 100%;
+}
+
+
+
+
+/* <!--✔✔✔ catagory section ✔✔✔--> */
+.categorySection{
+    height: 450px;
+    max-width: 1000px;
+    margin: auto  
+}
+.catHeadSection{
+    height: 80px;
+    color: #2f3432;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.catHeadSection a{
+    color: #2e84ab;
+    text-decoration: none;
+    display: none;
+}
+.categoryItem{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 50px;
+}
+.catgroup{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    cursor: pointer; 
+}
+.iconcat i{
+    font-size: 1.5rem;
+}
+.paracat p{
+    font-size: 0.8rem;
+    color: #707676;
+}
+.paracat h4{
+    color: #2f3432;
+    font-weight: 400;
+    font-size: 1rem;
+}
+@media screen and (max-width: 800px) {
+    .adSection{
+        height: 60px;
+    }
+
+    .ads img{
+        height: 60px;;
+        width: 100%;
+    }
+    .categoryItem{
+       height: 100px; 
+       display: flex;
+       align-items: center;
+       overflow-x: auto;
+    }
+    .categoryItem::-webkit-scrollbar{
+      width: 0;  
+    }
+    .catgroup{
+        user-select: none;
+        display: flex;
+        flex-direction: column;
+        min-width: 70px;
+        text-align: center;
+    }
+
+    .long-text{
+        min-width: 120px;
+    }
+    .long-text2{
+        min-width: 200px;
+    }
+    .catHeadSection a{
+        display: block;
+    }
+    .categorySection{
+        height: 220px;
+    }
+}
+
+
+
+/* ---  ✔✔✔ promot Section ✔✔✔ ----- */
+.promotSection{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow:  0 0 10px #c7c7c7;
+    border-radius: 10px;
+}
+/* left */
+.promotLeft{
+    flex: 1 0 300px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.moneyimg i{
+    font-size: 6rem;
+}
+.moneyinfo span{
+    font-size: .9rem;
+    color: #424e4e;
+    line-height: 1.3rem;
+}
+.moneyinfo h3{
+    color: #2f3432;
+    letter-spacing: .7px;
+    padding: 5px;
+}
+.moneybtn{
+    margin-top: 10px;
+    height: 40px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFC800;
+    border-radius: 20px;
+    color: #673500;
+    font-weight: 500;
+    gap: 8px;
+    cursor: pointer;
+}
+
+/* right */
+
+.promotRight{
+    flex: 1 0 300px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 40px;
+    border-left: 1px solid #d8d8d8;
+}
+
+.promotRight .rightlogo img{
+    border-radius: 5px;
+    width: 150px;
+}
+
+.promotRight span{
+    font-size: .9rem;
+    color: #424e4e;
+    line-height: 1.3rem;
+}
+
+.jobBtn{
+    height: 40px;
+    width: 200px;
+    background-color: #0074ba;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+}
+.jobBtn span{
+    color: #fff;
+}
+
+@media screen and (max-width:800px) {
+    .promotSection{
+        gap: 20px;
+        box-shadow: 0 0 0px;
+        padding: 0 20px;
+    }
+    .promotLeft{
+        box-shadow: 0 0 10px #cfcfcf;
+        flex-direction: column;
+        border-radius: 10px;
+        padding: 40px 150px;
+    }
+    .moneyinfo{
+        text-align: center;
+    }
+    .moneybtn, .jobBtn{
+        margin: auto;
+    }
+
+    .promotRight{
+        text-align: center;
+        border-left: 0px solid;
+        box-shadow: 0 0 10px #cfcfcf;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+    .moneybtn{
+        margin-top: 10px;
+    }
+}
+
+
+
+/* ---- ✔✔✔ quick link section ✔✔✔---- */
+.quicklinkSection{
+    height: 280px;
+    max-width: 1000px;
+    margin: auto  
+}
+.quicklinkSection h4{
+    padding-top: 40px;
+    color: #2f3432;
+    height: 80px;
+    font-weight: 700;
+}
+.allQuicklink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.quicklinkBox{
+    width: 250px;
+    background-color: #F3F6F5;
+    padding: 20px;
+    border-radius: 5px;
+}
+.testlink a{
+    text-decoration: none;
+    color: #424e4e;
+} 
+.quicklinkBox h5{
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width:800px) {
+    .quicklinkBox{
+        min-width: 280px;
+    }
+    .quicklinkSection{
+        margin: 15px;
+        height: 230px;
+    }
+    .allQuicklink{
+        overflow-x: auto;
+        justify-content: left;
+    }
+    .allQuicklink::-webkit-scrollbar{
+        width: 0;
+    }
+    .quicklinkSection h4{
+        margin-left: 10px;
+    }
+}
+
+
+
+
+
+/* ----✔✔✔ about section ✔✔✔------- */
+.aboutbikroy{
+    max-width: 1000px;
+    margin: auto;
+    color: #707676;
+}
+
+.aboutinfo p{
+    word-spacing:  .1rem;
+}
+
+.showmbtn{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 7px;
+}
+
+
+@media screen and (max-width:800px) {
+    .aboutbikroy{
+        padding: 0 20px;
+    }
+    .showmbtn{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .aboutinfo h3{
+        padding: 10px 0;
+        font-size: .9rem;
+    }
+
+    .aboutinfo p{
+        font-size: .9rem;
+    }
+}
+
+/*   ✔✔✔ footer Section ✔✔✔   */
+
+.app img{
+    height: 30px;
+    width: 100px;
+}
+
+.othersCountry img{
+    height: 25px;
+}
+
+.footerBtm img{
+    width: 90px;
+}
+
+footer{
+    margin-top: 40px;
+    width: 100%;
+    height: 370px;
+    background-color: #f3f6f5;
+}
+
+.footerSection{
+    max-width: 1000px;
+    margin: auto;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.footerSection h4{
+    color: #424e4e;
+}
+
+.footerSection .footPara1 ul li{
+    list-style: none;
+    line-height: 2rem;
+}
+
+.footerSection .footPara1 ul li a{
+    text-decoration: none;
+    color: #4f5251;
+}
+
+
+.footerSection .footPara1 ul{
+    padding-top: 10px;
+}
+
+.footerSection .footPara1 ul li a:hover{
+    color: #171717;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    align-items: end;
+}
+
+.headlast{
+    margin-top: 20px;
+    text-align: right;
+}
+
+.othersCountry{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.othersCountry a{
+    text-decoration: none;
+    color: #656565;
+}
+.othersCountry a:hover{
+    color: #171717;
+}
+
+.footerBtm{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    color: #878787;
+}
+
+@media screen and (max-width:800px) {
+    footer{
+        height: auto;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .footerSection{
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        padding: 10px;
+    }
+
+    .footerSection h4{
+        margin-top: 20px;
+    }
+    .footerBtm{
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+
+
+}
